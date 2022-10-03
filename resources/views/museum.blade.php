@@ -495,10 +495,10 @@
             @if (Route::has('login'))
             @endif
             @else
-            <form class="crud-btn" action="{{ route('museum.destroy',$computer->id) }}" method="POST">
-              <a class="btn w3-btn w3-red w3-hide-small" href="">Modifica</a>
+            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('computer.edit', $computer->id) }}">Modifica</a>
+            <form class="crud-btn" action="{{ route('computer.destroy', $computer->id) }}" method="post">
               @csrf
-              @method('DELETE')
+              @method('delete')
               <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
             </form>
             @endguest
@@ -507,6 +507,8 @@
         </div>
         @endforeach
       </div>
+
+
 
       <!--Riviste Grid-->
       <div class="filterDiv rivista w3-row-padding row-item">
@@ -520,12 +522,23 @@
             <h5><b>Anno:</b> {{$magazine->anno}}</h5>
             <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
 
-
+            @guest
+            @if (Route::has('login'))
+            @endif
+            @else
+            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('magazine.edit', $magazine->id) }}">Modifica</a>
+            <form class="crud-btn" action="{{ route('magazine.destroy', $magazine->id) }}" method="post">
+              @csrf
+              @method('delete')
+              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+            </form>
+            @endguest
 
           </li>
         </div>
         @endforeach
       </div>
+
 
 
       <!--Software Grid-->
@@ -540,12 +553,23 @@
             <h5><b>Tipologia:</b> {{$software->tipologia}}</h5>
             <h5><b>Supporto:</b> {{$software->supporto}}</h5>
 
-
+            @guest
+            @if (Route::has('login'))
+            @endif
+            @else
+            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('software.edit', $software->id) }}">Modifica</a>
+            <form class="crud-btn" action="{{ route('software.destroy', $software->id) }}" method="post">
+              @csrf
+              @method('delete')
+              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+            </form>
+            @endguest
 
           </li>
         </div>
         @endforeach
       </div>
+
 
 
       <!--Libri Grid-->
@@ -561,12 +585,23 @@
             <h5><b>Anno di Pubblicazione:</b> {{$book->anno_pubblicazione}}</h5>
             <h5><b>Numero di pagine:</b> {{$book->n_pagine}}</h5>
 
-
+            @guest
+            @if (Route::has('login'))
+            @endif
+            @else
+            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('book.edit', $book->id) }}">Modifica</a>
+            <form class="crud-btn" action="{{ route('book.destroy', $book->id) }}" method="post">
+              @csrf
+              @method('delete')
+              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+            </form>
+            @endguest
 
           </li>
         </div>
         @endforeach
       </div>
+
 
 
       <!--Periferiche Grid-->
@@ -579,13 +614,24 @@
             <h2><b>{{$peripheral->modello}}</b></h2>
             <h5><b>Tipologia:</b> {{$peripheral->tipologia}}</h5>
 
-
+            @guest
+            @if (Route::has('login'))
+            @endif
+            @else
+            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('peripheral.edit', $peripheral->id) }}">Modifica</a>
+            <form class="crud-btn" action="{{ route('peripheral.destroy', $peripheral->id) }}" method="post">
+              @csrf
+              @method('delete')
+              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+            </form>
+            @endguest
 
           </li>
         </div>
         @endforeach
       </div>
     </ul>
+
 
     <!-- MODALE FOTO -->
     <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">

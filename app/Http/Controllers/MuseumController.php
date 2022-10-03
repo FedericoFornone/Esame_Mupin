@@ -135,9 +135,9 @@ class MuseumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+        
     }
 
     /**
@@ -149,7 +149,7 @@ class MuseumController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**
@@ -158,10 +158,8 @@ class MuseumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, $id)
+    public function destroy($id)
     {
-        if ($request->artifact == 'computer') {
-            $request = Computer::findOrFail($id);
-
+       
     }
 }

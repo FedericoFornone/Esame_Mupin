@@ -21,6 +21,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/museum', App\Http\Controllers\MuseumController::class);
 
+Route::resource('/computer', App\Http\Controllers\ComputerController::class);
+Route::resource('/magazine', App\Http\Controllers\MagazineController::class);
+Route::resource('/software', App\Http\Controllers\SoftwareController::class);
+Route::resource('/peripheral', App\Http\Controllers\PeripheralController::class);
+Route::resource('/book', App\Http\Controllers\BookController::class);
+
 Route::get('/', function () {
     return view('welcome');
 });
