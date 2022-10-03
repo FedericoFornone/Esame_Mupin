@@ -470,7 +470,7 @@
         </div>
       </div>
 
-      <!-- input tag -->
+      <!-- INPUT RICERCA -->
       <div class="w3-container w3-padding-16">
         <span class="w3-margin-right">Ricerca:</span>
         <input id="searchbar" onkeyup="search_artifact()" type="text" name="search" placeholder="Cerca Artefatti per nome">
@@ -490,6 +490,12 @@
             <h5><b>Modello:</b> {{$computer->modello}}</h5>
             <h5><b>Anno:</b> {{$computer->anno}}</h5>
             <h5><b>Sistema Operativo:</b> {{$computer->os}}</h5>
+            <h5><b>Velocità:</b> {{$computer->velocita}}Hz</h5>
+            <h5><b>Memoria:</b> {{$computer->memoria}}</h5>
+            <h5><b>CPU:</b> {{$computer->cpu}}</h5>
+            <h5><b>Note:</b> {{$computer->note}}</h5>
+            <h5><b>URL:</b> {{$computer->url}}</h5>
+            <h5><b>Tag:</b> {{$computer->tag}}</h5>
 
             @guest
             @if (Route::has('login'))
@@ -521,6 +527,10 @@
             <h5><b>Numero:</b> {{$magazine->numero}}</h5>
             <h5><b>Anno:</b> {{$magazine->anno}}</h5>
             <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
+            <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
+            <h5><b>Note:</b> {{$magazine->note}}</h5>
+            <h5><b>URL:</b> {{$magazine->url}}</h5>
+            <h5><b>Tag:</b> {{$magazine->tag}}</h5>
 
             @guest
             @if (Route::has('login'))
@@ -552,6 +562,9 @@
             <h5><b>Sistema Operativo:</b> {{$software->os}}</h5>
             <h5><b>Tipologia:</b> {{$software->tipologia}}</h5>
             <h5><b>Supporto:</b> {{$software->supporto}}</h5>
+            <h5><b>Note:</b> {{$software->note}}</h5>
+            <h5><b>URL:</b> {{$software->url}}</h5>
+            <h5><b>Tag:</b> {{$software->tag}}</h5>
 
             @guest
             @if (Route::has('login'))
@@ -584,6 +597,9 @@
             <h5><b>Casa Editrice:</b> {{$book->casa_editrice}}</h5>
             <h5><b>Anno di Pubblicazione:</b> {{$book->anno_pubblicazione}}</h5>
             <h5><b>Numero di pagine:</b> {{$book->n_pagine}}</h5>
+            <h5><b>Note:</b> {{$book->note}}</h5>
+            <h5><b>URL:</b> {{$book->url}}</h5>
+            <h5><b>Tag:</b> {{$book->tag}}</h5>
 
             @guest
             @if (Route::has('login'))
@@ -613,6 +629,9 @@
             <img src="/resources/photo/Periferiche.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
             <h2><b>{{$peripheral->modello}}</b></h2>
             <h5><b>Tipologia:</b> {{$peripheral->tipologia}}</h5>
+            <h5><b>Note:</b> {{$peripheral->note}}</h5>
+            <h5><b>URL:</b> {{$peripheral->url}}</h5>
+            <h5><b>Tag:</b> {{$peripheral->tag}}</h5>
 
             @guest
             @if (Route::has('login'))
