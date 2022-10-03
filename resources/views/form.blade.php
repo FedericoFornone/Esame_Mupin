@@ -483,7 +483,7 @@
         </div>
 
         <div id="inputISBN" style="display: none;" class="w3-section">
-          <label>ISBN</label>
+          <label>ISBN (max 10 numeri)</label>
           <input class="w3-input w3-border" type="text" name="isbn">
         </div>
 

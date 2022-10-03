@@ -475,7 +475,7 @@
                     <input class="w3-input w3-border" type="text" value="{{ old('tag', $peripheral->tag) }}" name="tag">
                 </div>
 
-                <button id="submitBtn" type="submit" class="w3-button w3-block w3-padding-medium w3-red w3-margin-bottom mt-5">Aggiungi Artefatto</button>
+                <button id="submitBtn" type="submit" class="w3-button w3-block w3-padding-medium w3-red w3-margin-bottom mt-5">Modifica Artefatto</button>
 
             </form>
 
