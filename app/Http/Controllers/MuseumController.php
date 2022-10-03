@@ -163,11 +163,5 @@ class MuseumController extends Controller
         if ($request->artifact == 'computer') {
             $request = Computer::findOrFail($id);
 
-            $request->tags()->detach();
-    
-            $request->delete();
-    
-            return redirect()->route("museum");
-        }
     }
 }
