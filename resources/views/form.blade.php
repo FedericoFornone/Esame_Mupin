@@ -457,11 +457,6 @@
           <option value='periferica'>Periferica</option>
         </select>
 
-        <div id="inputID" style="display: none;" class="w3-section">
-          <label>ID</label>
-          <input class="w3-input w3-border" type="text" name="id" required>
-        </div>
-
         <div id="inputTitolo" style="display: none;" class="w3-section">
           <label>Titolo</label>
           <input class="w3-input w3-border" type="text" name="titolo">
