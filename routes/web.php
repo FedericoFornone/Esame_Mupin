@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Computer;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 

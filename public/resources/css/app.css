@@ -1,104 +1,96 @@
-
 /* Sidebar */
-.sidebar-nav{
+.sidebar-nav {
     margin-top: 20%;
 }
 
-.sidebar-nav a{
+.sidebar-nav a {
     font-size: 20px;
     margin-bottom: 5%;
 }
 
-.title-amm h4{
+.title-amm h4 {
     font-size: 28px;
     color: rgba(255, 255, 255, 0.603);
     margin-top: 10%;
 }
 
-.w3-bar-item span{
+.w3-bar-item span {
     font-size: 20px;
 }
 
-
-
 /* Zoom Immagine */
-#img01{
+#img01 {
     margin-top: 5%;
 }
 
-#caption{
+#caption {
     font-size: 40px;
     margin-top: 5%;
 }
 
-
-
 /* Main Section */
-.w3-container h1{
-    margin-bottom: 5%;
+.w3-container h1 {
+    margin-bottom: 3%;
 }
 
-.w3-xxxlarge h1{
-    font-size: 60px;   
+.w3-xxxlarge h1 {
+    font-size: 60px;
 }
 
-.w3-container h1{
+.w3-container h1 {
     text-decoration: underline;
     text-underline-offset: 15px;
     text-decoration-thickness: 8px;
 }
 
-.w3-container span{
+.w3-container span {
     font-size: 30px;
     text-align: center;
     margin-top: 10%;
 }
 
-.intex{
+.intex {
     font-size: 25px;
 }
 
-#foot{
+#foot {
     font-size: 20px;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
-
 /* Eventi */
-.w3-col a{
+.w3-col a {
     font-size: 20px;
     text-decoration: none;
 }
 
 
-
 /* Descrizione Artefatti Principale */
-.desc{
+.desc {
     font-size: 18px;
     color: rgb(0, 0, 0);
 }
 
-.desc span{
+.desc span {
     font-size: 25px;
 }
 
 
 
 /* Logout Dropdown */
-.nav-item a{
+.nav-item a {
     text-align: center;
-    
+
     width: 200px;
     border: 1px solid gray;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);;
+    background-color: rgb(255, 255, 255);
 }
 
-
-.nav-item a:hover{
+.nav-item a:hover {
     background-color: rgb(255, 27, 27);
     color: white;
 }
@@ -109,7 +101,7 @@ ul a {
     border-radius: 5px;
 }
 
-.dropdown button{
+.dropdown button {
     font-size: 15px;
     color: gray;
 
@@ -120,10 +112,9 @@ ul a {
     border: 1px solid gray;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    
 }
 
-.dropdown button:hover{
+.dropdown button:hover {
     background-color: rgb(255, 27, 27);
     color: white;
 }
@@ -131,14 +122,89 @@ ul a {
 
 
 /* Artefatti Museo */
-button{
+button {
     width: 120px;
 }
 
-.row-item{
+.w3-row-padding h1{
+    font-size: 50px;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 40px;
+}
+
+.row-item {
     margin-top: 5%;
 }
 
-.w3-margin-right{
+.w3-margin-right {
     font-size: 10px;
+}
+
+.artifact {
+    margin-top: 0px;
+}
+
+.crud-btn{
+    margin-top: 30px;
+}
+
+
+
+/* Filtro Artefatti */
+.w3-button:active {
+    background-color: #666;
+    color: rgb(0, 0, 0);
+}
+
+.container-filter {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.filter-btn:focus{
+    zoom: 150%;
+}
+
+
+
+
+/* Search Bar Style */
+
+#searchbar{
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.artifact{
+  display: list-item;    
+ } 
+
+ul{
+    list-style-type: none;  
 }

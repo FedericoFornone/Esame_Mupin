@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Computer;
 use App\Models\Magazine;
 use App\Models\Software;
@@ -113,12 +114,9 @@ class MuseumController extends Controller
             );
         }
 
-
-
-
-
         return redirect()->route('museum.index');
     }
+
 
     /**
      * Display the specified resource.
@@ -160,8 +158,16 @@ class MuseumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+        if ($request->artifact == 'computer') {
+            $request = Computer::findOrFail($id);
+
+            $request->tags()->detach();
+    
+            $request->delete();
+    
+            return redirect()->route("museum");
+        }
     }
 }

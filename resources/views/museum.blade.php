@@ -452,117 +452,176 @@
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
-    <div class="w3-container" id="showcase">
+    <div class="w3-container">
       <h1 class="w3-xxxlarge w3-text-red"><b>ARTEFATTI</b></h1>
     </div>
 
     <!-- Header -->
-    <header id="portfolio">
+    <header id="filter">
       <div class="w3-container">
         <div class="w3-section w3-bottombar w3-padding-16">
           <span class="w3-margin-right">Filtro:</span>
-          <button class="w3-button w3-red">Tutto</button>
-          <button class="w3-button w3-red">Computer</button>
-          <button class="w3-button w3-red w3-hide-small">Riviste</button>
-          <button class="w3-button w3-red w3-hide-small">Software</button>
-          <button class="w3-button w3-red w3-hide-small">Libri</button>
-          <button class="w3-button w3-red w3-hide-small">Periferiche</button>
+          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('all')">Tutto</button>
+          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('computer')">Computer</button>
+          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('rivista')">Riviste</button>
+          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('software')">Software</button>
+          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('libro')">Libri</button>
+          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('periferica')">Periferiche</button>
         </div>
+      </div>
+
+      <!-- input tag -->
+      <div class="w3-container w3-padding-16">
+        <span class="w3-margin-right">Ricerca:</span>
+        <input id="searchbar" onkeyup="search_artifact()" type="text" name="search" placeholder="Cerca Artefatti per nome">
       </div>
     </header>
 
 
+    <ul id='list' class="container-filter">
+      <!-- Computer Grid-->
+      <div class="filterDiv computer w3-row-padding row-item">
+        <h1><b>Computer</b></h1>
+        @foreach ($computers as $computer)
+        <div class="filterDiv computer w3-third w3-margin-bottom">
+          <li class="artifact w3-container w3-white">
+            <img src="/resources/photo/Computer.jpg" alt="Norway" style="width:70%" class="image w3-hover-opacity" onclick="onClick(this)" alt="Computer">
+            <h2><b>{{$computer->modello}}</b></h2>
+            <h5><b>Modello:</b> {{$computer->modello}}</h5>
+            <h5><b>Anno:</b> {{$computer->anno}}</h5>
+            <h5><b>Sistema Operativo:</b> {{$computer->os}}</h5>
 
-    <!-- Computer Grid-->
-    <div class="w3-row-padding row-item">
-      @foreach ($computers as $computer)
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/resources/photo/Computer.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <span><b>{{$computer->modello}}</b></span>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            @guest
+            @if (Route::has('login'))
+            @endif
+            @else
+            <form class="crud-btn" action="{{ route('museum.destroy',$computer->id) }}" method="POST">
+              <a class="btn w3-btn w3-red w3-hide-small" href="">Modifica</a>
+              @csrf
+              @method('DELETE')
+              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+            </form>
+            @endguest
+
+          </li>
         </div>
+        @endforeach
       </div>
-      @endforeach
+
+      <!--Riviste Grid-->
+      <div class="filterDiv rivista w3-row-padding row-item">
+        <h1><b>Riviste</b></h1>
+        @foreach ($magazines as $magazine)
+        <div class="filterDiv rivista w3-third w3-margin-bottom">
+          <li class="artifact w3-container w3-white">
+            <img src="/resources/photo/Rivista.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+            <h2><b>{{$magazine->titolo}}</b></h2>
+            <h5><b>Numero:</b> {{$magazine->numero}}</h5>
+            <h5><b>Anno:</b> {{$magazine->anno}}</h5>
+            <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
+
+
+
+          </li>
+        </div>
+        @endforeach
+      </div>
+
+
+      <!--Software Grid-->
+      <div class="filterDiv software w3-row-padding row-item">
+        <h1><b>Software</b></h1>
+        @foreach ($softwares as $software)
+        <div class="filterDiv software w3-third w3-margin-bottom">
+          <li class="artifact w3-container w3-white">
+            <img src="/resources/photo/Software.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+            <h2><b>{{$software->titolo}}</b></h2>
+            <h5><b>Sistema Operativo:</b> {{$software->os}}</h5>
+            <h5><b>Tipologia:</b> {{$software->tipologia}}</h5>
+            <h5><b>Supporto:</b> {{$software->supporto}}</h5>
+
+
+
+          </li>
+        </div>
+        @endforeach
+      </div>
+
+
+      <!--Libri Grid-->
+      <div class="filterDiv libro w3-row-padding row-item">
+        <h1><b>Libri</b></h1>
+        @foreach ($books as $book)
+        <div class="filterDiv libro w3-third w3-margin-bottom">
+          <li class="artifact w3-container w3-white">
+            <img src="/resources/photo/Libro.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+            <h2><b>{{$book->titolo}}</b></h2>
+            <h5><b>Autori:</b> {{$book->autori}}</h5>
+            <h5><b>Casa Editrice:</b> {{$book->casa_editrice}}</h5>
+            <h5><b>Anno di Pubblicazione:</b> {{$book->anno_pubblicazione}}</h5>
+            <h5><b>Numero di pagine:</b> {{$book->n_pagine}}</h5>
+
+
+
+          </li>
+        </div>
+        @endforeach
+      </div>
+
+
+      <!--Periferiche Grid-->
+      <div class="filterDiv periferica w3-row-padding row-item">
+        <h1><b>Periferiche</b></h1>
+        @foreach ($peripherals as $peripheral)
+        <div class="filterDiv periferica w3-third w3-margin-bottom">
+          <li class="artifact w3-container w3-white">
+            <img src="/resources/photo/Periferiche.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+            <h2><b>{{$peripheral->modello}}</b></h2>
+            <h5><b>Tipologia:</b> {{$peripheral->tipologia}}</h5>
+
+
+
+          </li>
+        </div>
+        @endforeach
+      </div>
+    </ul>
+
+    <!-- MODALE FOTO -->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+      </div>
     </div>
 
-    <!--Riviste Grid-->
-    <div class="w3-row-padding row-item">
-      @foreach ($magazines as $magazine)
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/resources/photo/Rivista.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <span><b>{{$magazine->titolo}}</b></span>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        </div>
-      </div>
-      @endforeach
-    </div>
+  </div>
 
 
-    <!--Software Grid-->
-    <div class="w3-row-padding row-item">
-      @foreach ($softwares as $software)
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/resources/photo/Software.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <span><b>{{$software->titolo}}</b></span>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        </div>
-      </div>
-      @endforeach
-    </div>
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
 
-    <!--Libri Grid-->
-    <div class="w3-row-padding row-item">
-    @foreach ($books as $book)
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/resources/photo/Libro.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <span><b>{{$book->titolo}}</b></span>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        </div>
-      </div>
-      @endforeach
-    </div>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
 
-
-    <!--Periferiche Grid-->
-    <div class="w3-row-padding row-item">
-    @foreach ($peripherals as $peripheral)
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/resources/photo/Periferiche.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <span><b>{{$peripheral->modello}}</b></span>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        </div>
-      </div>
-      @endforeach
-    </div>
-
-
-    <script>
-      // Script to open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
-
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-      }
-
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-    </script>
-    @endsection
+  <script src="{{ asset('resources/js/filterMuseum.js')}}"></script>
+  <script src="{{ asset('resources/js/search.js')}}"></script>
+  @endsection
 
 
 </body>
