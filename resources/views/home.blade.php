@@ -47,8 +47,8 @@
       <h4>Amministratore</h4>
     </div>
     <div class="w3-bar-block sidebar-nav">
-      <a href="{{ route('museum.index') }}" " class=" w3-bar-item w3-button w3-hover-white">Artefatti (Museo)</a>
       <a href="{{ route('museum.create') }}" class="w3-bar-item w3-button w3-hover-white">Nuovo Artefatto</a>
+      <a href="{{ route('museum.index') }}" " class=" w3-bar-item w3-button w3-hover-white">Artefatti (Museo)</a>
       <a href="#services" class="w3-bar-item w3-button w3-hover-white">Chi Siamo?</a>
       <a href="#designers" class="w3-bar-item w3-button w3-hover-white">Eventi</a>
     </div>

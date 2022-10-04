@@ -433,6 +433,7 @@
     </div>
     <div class="w3-bar-block sidebar-nav">
       <a href="{{ url('home') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a></a>
+      <a href="{{ route('museum.index') }}" " class=" w3-bar-item w3-button w3-hover-white">Artefatti (Museo)</a>
     </div>
   </nav>
 

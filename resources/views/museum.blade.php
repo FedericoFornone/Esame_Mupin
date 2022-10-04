@@ -485,7 +485,7 @@
         <div class="filterDiv computer w3-row-padding row-item">
           <h1><b>Computer</b></h1>
           @foreach ($computers as $computer)
-          <div class="filterDiv computer w3-third w3-margin-bottom">
+          <div class="w3-third w3-margin-bottom">
             <li class="artifact-item w3-container w3-white">
               <img src="/resources/photo/Computer.jpg" alt="Norway" style="width:70%" class="image w3-hover-opacity" onclick="onClick(this)" alt="Computer">
               <h2><b>{{$computer->modello}}</b></h2>
@@ -526,8 +526,8 @@
         <div class=" filterDiv rivista w3-row-padding row-item">
           <h1><b>Riviste</b></h1>
           @foreach ($magazines as $magazine)
-          <div class="filterDiv rivista w3-third w3-margin-bottom">
-            <li class=" w3-container w3-white">
+          <div class="w3-third w3-margin-bottom">
+            <li class="artifact-item w3-container w3-white">
               <img src="/resources/photo/Rivista.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
               <h2><b>{{$magazine->titolo}}</b></h2>
               <h5><b>Numero:</b> {{$magazine->numero}}</h5>
@@ -565,7 +565,7 @@
         <div class=" filterDiv software w3-row-padding row-item">
           <h1><b>Software</b></h1>
           @foreach ($softwares as $software)
-          <div class="filterDiv software w3-third w3-margin-bottom">
+          <div class="w3-third w3-margin-bottom">
             <li class="artifact-item w3-container w3-white">
               <img src="/resources/photo/Software.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
               <h2><b>{{$software->titolo}}</b></h2>
@@ -602,7 +602,7 @@
         <div class=" filterDiv libro w3-row-padding row-item">
           <h1><b>Libri</b></h1>
           @foreach ($books as $book)
-          <div class="filterDiv libro w3-third w3-margin-bottom">
+          <div class="w3-third w3-margin-bottom">
             <li class="artifact-item w3-container w3-white">
               <img src="/resources/photo/Libro.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
               <h2><b>{{$book->titolo}}</b></h2>
@@ -637,10 +637,10 @@
       <!--Periferiche Grid-->
       <div class="artifact">
 
-        <div class=" filterDiv periferica w3-row-padding row-item">
+        <div class="filterDiv periferica w3-row-padding row-item">
           <h1><b>Periferiche</b></h1>
           @foreach ($peripherals as $peripheral)
-          <div class="filterDiv periferica w3-third w3-margin-bottom">
+          <div class="w3-third w3-margin-bottom">
             <li class="artifact-item w3-container w3-white">
               <img src="/resources/photo/Periferiche.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
               <h2><b>{{$peripheral->modello}}</b></h2>
