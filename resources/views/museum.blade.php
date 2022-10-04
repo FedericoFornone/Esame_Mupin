@@ -479,6 +479,7 @@
       </div>
     </header>
 
+    
 
     <ul id='list' class="container-filter">
       <!-- Computer Grid-->
@@ -557,8 +558,6 @@
           @endforeach
         </div>
       </div>
-
-
 
 
       <!--Software Grid-->

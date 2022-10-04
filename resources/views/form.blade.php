@@ -558,7 +558,7 @@
           <input class="w3-input w3-border" type="text" name="tag">
         </div>
 
-        <button id="submitBtn" style="display: none;" type="submit" class="w3-button w3-block w3-padding-medium w3-margin-bottom mt-5">Aggiungi Artefatto</button>
+        <button id="submitBtn" style="display: none;" type="submit" class="add-artifact w3-button w3-block w3-padding-medium w3-margin-bottom mt-5">Aggiungi Artefatto</button>
 
       </form>
 

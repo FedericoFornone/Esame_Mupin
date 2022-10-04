@@ -16,9 +16,41 @@ class BookSeeder extends Seeder
     public function run()
     {
         $books = [
-            ["titolo" => "Errore di Sistema", "autori" => 'Edward Snowden' ,  "casa_editrice" => "Longanesi", "anno_pubblicazione" => 2019, "n_pagine" => 347, "isbn" => 46221674, "note" => " ", "url" => " ", "tag" => " ",],
-            ["titolo" => "Il giorno del Bianconiglio", "autori" => 'Alessandro Curioni' ,  "casa_editrice" => "Chiarelettere", "anno_pubblicazione" => 2021, "n_pagine" => 312, "isbn" => 6593758, "note" => " ", "url" => " ", "tag" => " ",],
-            ["titolo" => "L'arte dell'hacking", "autori" => 'Kevin D. Mitnick' ,  "casa_editrice" => "Cuzzullo", "anno_pubblicazione" => 2016, "n_pagine" => 390, "isbn" => 8807883, "note" => " ", "url" => " ", "tag" => " ",],
+            [
+                "titolo" => "Errore di Sistema",
+                "autori" => 'Edward Snowden',
+                "casa_editrice" => "Longanesi",
+                "anno_pubblicazione" => 2019,
+                "n_pagine" => 347,
+                "isbn" => 46221674,
+                "note" => "Mi chiamo Edward Joseph Snowden...",
+                "url" => " ",
+                "tag" => "Info, Storia",
+            ],
+
+            [
+                "titolo" => "Il giorno del Bianconiglio",
+                "autori" => 'Alessandro Curioni',
+                "casa_editrice" => "Chiarelettere",
+                "anno_pubblicazione" => 2021,
+                "n_pagine" => 312,
+                "isbn" => 6593758,
+                "note" => "Tracciare i criminali informatici come si fa...",
+                "url" => " ",
+                "tag" => "Lettura, Ricreazione",
+            ],
+
+            [
+                "titolo" => "L'arte dell'hacking",
+                "autori" => 'Kevin D. Mitnick',
+                "casa_editrice" => "Cuzzullo",
+                "anno_pubblicazione" => 2016,
+                "n_pagine" => 390,
+                "isbn" => 8807883,
+                "note" => "Mitnick offre con questo libro un sequel al suo libro L'arte dell'inganno...",
+                "url" => " ",
+                "tag" => "Hacking, Dev",
+            ],
         ];
         foreach ($books as $book) {
 

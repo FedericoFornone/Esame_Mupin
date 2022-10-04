@@ -16,10 +16,30 @@ class PeripheralSeeder extends Seeder
     public function run()
     {
         $peripherals = [
-            ["modello" => "Tastiera Logitec", "tipologia" => 'input', "note" => " ", "url" => " ", "tag" => " ",],
-            ["modello" => "Cuffie della Smermax", "tipologia" => 'output', "note" => " ", "url" => " ", "tag" => " ",],
-            ["modello" => "Proiettore Samsung", "tipologia" => 'input', "note" => " ", "url" => " ", "tag" => " ",],
-           
+            [
+                "modello" => "Tastiera Logitec",
+                "tipologia" => 'input',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
+            [
+                "modello" => "Cuffie della Smermax",
+                "tipologia" => 'output',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
+            [
+                "modello" => "Proiettore Samsung",
+                "tipologia" => 'input',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
         ];
         foreach ($peripherals as $peripheral) {
 

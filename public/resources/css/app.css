@@ -1,127 +1,3 @@
-/* Sidebar */
-
-.w3-sidebar{
-    background-color: #1d37ab;
-}
-
-.sidebar-nav {
-    margin-top: 20%;
-}
-
-.sidebar-nav a {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 5%;
-}
-
-.title-amm h4 {
-    font-size: 28px;
-    color: rgba(255, 255, 255, 0.603);
-    margin-top: 10%;
-}
-
-.w3-bar-item span {
-    font-size: 20px;
-}
-
-
-/* Zoom Immagine */
-#img01 {
-    margin-top: 5%;
-}
-
-#caption {
-    font-size: 40px;
-    margin-top: 5%;
-}
-
-
-
-/* Main Section */
-.w3-xxxlarge b{
-    font-size: 100px;
-}
-
-.w3-container h1 {
-    color: #1d37ab;
-
-    margin-bottom: 3%;
-
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    text-decoration-thickness: 8px;
-}
-
-.w3-container span {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10%;
-}
-
-.image-section{
-    margin-top: 60px;
-}
-
-.image-section img{
-    margin-right: 40px;
-    border: solid 3px #1d37ab;
-    border-radius: 20px;
-}
-
-.intex {
-    font-size: 25px;
-}
-
-#foot {
-    font-size: 20px;
-}
-
-p {
-    font-size: 18px;
-}
-
-
-
-
-/* Eventi */
-.event{
-    padding: 20px;
-    margin: 20px;
-    background-color: #1d37ab;
-    border-radius: 40px;
-}
-
-.event:hover{
-    padding: 20px;
-    margin: 20px;
-    color: #1d37ab;
-    background-color: #ffffff;
-    border: 5px solid #1d37ab;
-    border-radius: 40px;
-}
-
-
-.w3-col {
-    font-size: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 100px;
-}
-
-
-
-/* Descrizione Artefatti Principale */
-.desc {
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-}
-
-.desc span {
-    font-size: 25px;
-}
-
-
-
 /* Login */
 .nav-item a {
     font-size: 20px;
@@ -141,11 +17,11 @@ p {
 }
 
 /* Logout Dropdown */
-.dropdown-menu{
+.dropdown-menu {
     border: 1px solid #1d37ab;
 }
 
-.dropdown span{
+.dropdown span {
     color: #1d37ab;
 }
 
@@ -153,9 +29,9 @@ p {
     font-size: 20px;
     text-align: center;
     color: #1d37ab;
-    
+
     width: 200px;
-    
+
     padding: 8px;
     margin-right: 30px;
     border: 1px solid #1d37ab;
@@ -176,16 +52,130 @@ ul a {
 }
 
 
+
+
+/* Sidebar */
+.w3-sidebar {
+    background-color: #1d37ab;
+}
+
+.sidebar-nav {
+    margin-top: 20%;
+}
+
+.sidebar-nav a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.w3-bar-block a:hover {
+    color: #1d37ab;
+}
+
+.title-amm h4 {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.603);
+    margin-top: 10%;
+}
+
+.w3-bar-item span {
+    font-size: 20px;
+}
+
+
+
+
+/* Zoom Immagine */
+#img01 {
+    margin-top: 5%;
+}
+
+#caption {
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+
+
+
+/* Main Section */
+.w3-xxxlarge b {
+    font-size: 100px;
+}
+
+.w3-container h1 {
+    color: #1d37ab;
+
+    margin-bottom: 3%;
+
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 8px;
+}
+
+.w3-container span {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.image-section {
+    margin-top: 60px;
+}
+
+.image-section img {
+    margin-right: 40px;
+    border: solid 3px #1d37ab;
+    border-radius: 20px;
+}
+
+.intex {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+
+
+/* Eventi */
+.event {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1d37ab;
+    border-radius: 40px;
+}
+
+.event:hover {
+    padding: 20px;
+    margin: 20px;
+    color: #1d37ab;
+    background-color: #ffffff;
+    border: 5px solid #1d37ab;
+    border-radius: 40px;
+}
+
+.w3-col {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
 /* Artefatti Museo */
 button {
     width: 120px;
 }
 
-.filterDiv h1{
+.filterDiv h1 {
     text-align: center;
     font-size: 50px;
     color: #1d37ab;
-    
+
     width: 30%;
     border: 5px solid #1d37ab;
     border-radius: 40px;
@@ -197,30 +187,50 @@ button {
     margin-top: 5%;
 }
 
-.crud-btn{
+.crud-btn {
     display: inline-block;
     margin-top: 10px;
 }
 
-.w3-third a{
+.w3-third a {
     background-color: #1d37ab;
     color: rgb(255, 255, 255);
 }
 
-.w3-third button{
+.w3-third button {
     background-color: #1d37ab;
     color: rgb(255, 255, 255);
+}
+
+
+
+/* Descrizione Artefatti Principale */
+.desc {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.desc span {
+    font-size: 25px;
+}
+
+
+
+/* Edit Artefatti */
+.add-artifact {
+    background-color: #1d37ab;
+    color: #ffffff;
 }
 
 
 
 /* Filtro Artefatti */
-.filter-btn{
+.filter-btn {
     background-color: #1d37ab;
     color: rgb(255, 255, 255);
 }
 
-.filter-btn:focus{
+.filter-btn:focus {
     font-weight: bold;
     background-color: #ffffff;
     color: #1d37ab;
@@ -228,7 +238,7 @@ button {
     zoom: 150%;
 }
 
-.filter-btn:hover{
+.filter-btn:hover {
     font-weight: bold;
     background-color: #ffffff;
     color: #1d37ab;
@@ -247,42 +257,34 @@ button {
     display: block;
 }
 
-
-
-
-
 /* Search Bar Style */
-#searchbar{
-    padding:15px;
+#searchbar {
+    padding: 15px;
+    border: 3px solid #1d37ab;
     border-radius: 10px;
-  }
-
-  input[type=text] {
-     width: 30%;
-     -webkit-transition: width 0.15s ease-in-out;
-     transition: width 0.15s ease-in-out;
-  }
-
-  /* When the input field gets focus,
-       change its width to 100% */
-  input[type=text]:focus {
-    width: 70%;
-  }
-
- #list{
-   font-size:  1.5em;
-   margin-left: 90px;
-  }
-
-.artifact{
-  display: list-item;    
- } 
-
-ul{
-    list-style-type: none;  
 }
 
-.add-artifact{
-    background-color: #1d37ab;
-    color: #ffffff;
+input[type="text"] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+       change its width to 100% */
+input[type="text"]:focus {
+    width: 70%;
+}
+
+#list {
+    font-size: 1.5em;
+    margin-left: 90px;
+}
+
+.artifact {
+    display: list-item;
+}
+
+ul {
+    list-style-type: none;
 }

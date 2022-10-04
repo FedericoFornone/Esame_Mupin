@@ -430,7 +430,7 @@
     </div>
 
     <div class="w3-bar-block sidebar-nav">
-      <a href="{{ route('login') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span>[Login Amministratore]</span></a>
+      <a href="{{ route('login') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">[Login Amministratore]</a>
 
       <form method="POST" action="/museum">
         @csrf

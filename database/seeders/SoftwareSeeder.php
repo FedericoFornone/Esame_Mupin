@@ -16,11 +16,37 @@ class SoftwareSeeder extends Seeder
     public function run()
     {
         $softwares = [
-            ["titolo" => "Adobe Acrobat", "os" => "Windows/Linux", "tipologia" => 'multiservizio', "supporto" => 'Tutte le versioni', "note" => " ", "url" => " ", "tag" => " ",],
-            ["titolo" => "Microsoft Office", "os" => "Windows/Linux", "tipologia" => 'multiservizio', "supporto" => 'Tutte le versioni', "note" => " ", "url" => " ", "tag" => " ",],
-            ["titolo" => "Autocad", "os" => "Windows/Linux/Ios", "tipologia" => 'progettazione', "supporto" => 'Tutte le versioni', "note" => " ", "url" => " ", "tag" => " ",],
-            
-           
+            [
+                "titolo" => "Adobe Acrobat",
+                "os" => "Windows/Linux",
+                "tipologia" => 'multiservizio',
+                "supporto" => 'Tutte le versioni',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
+            [
+                "titolo" => "Microsoft Office",
+                "os" => "Windows/Linux",
+                "tipologia" => 'multiservizio',
+                "supporto" => 'Tutte le versioni',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
+            [
+                "titolo" => "Autocad",
+                "os" => "Windows/Linux/Ios",
+                "tipologia" => 'progettazione',
+                "supporto" => 'Tutte le versioni',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
+
         ];
         foreach ($softwares as $software) {
 

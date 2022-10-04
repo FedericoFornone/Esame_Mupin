@@ -16,10 +16,37 @@ class MagazineSeeder extends Seeder
     public function run()
     {
         $magazines = [
-            ["titolo" => "Win Magazine", "numero" => '21' ,  "anno" => "1996", "casa_editrice" => 'Zeppari', "note" => " ", "url" => " ", "tag" => " ",],
-            ["titolo" => "Computer Idea!", "numero" => '5' ,  "anno" => "1992", "casa_editrice" => 'JoJoReference', "note" => " ", "url" => " ", "tag" => " ",],
-            ["titolo" => "PC", "numero" => '1' ,  "anno" => "2000", "casa_editrice" => 'Kenshiro', "note" => " ", "url" => " ", "tag" => " ",],
-            
+            [
+                "titolo" => "Win Magazine",
+                "numero" => '21',
+                "anno" => "1996",
+                "casa_editrice" => 'Zeppari',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
+            [
+                "titolo" => "Computer Idea",
+                "numero" => '5',
+                "anno" => "1992",
+                "casa_editrice" =>
+                'JoJoReference',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
+            [
+                "titolo" => "PC",
+                "numero" => '1',
+                "anno" => "2000",
+                "casa_editrice" => 'Kenshiro',
+                "note" => " ",
+                "url" => " ",
+                "tag" => " ",
+            ],
+
         ];
         foreach ($magazines as $magazine) {
 
