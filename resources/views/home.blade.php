@@ -40,7 +40,7 @@
 <body>
 
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container title-amm">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
@@ -59,7 +59,7 @@
 
     <!-- Header -->
     <div class="w3-container" id="showcase">
-      <h1 class="w3-xxxlarge w3-text-red"><b>ARTEFATTI</b></h1>
+      <h1 class="w3-xxxlarge"><b>ARTEFATTI</b></h1>
     </div>
 
     <p class="desc">Gli artefatti che il Museo conserva sono: <span>Computer - Riviste - Software - Libri - Periferiche</span></p>
@@ -87,7 +87,7 @@
 
     <!-- Services -->
     <div class="w3-container" id="services" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>CHI SIAMO?</b></h1>
+      <h1 class="w3-xxxlarge"><b>CHI SIAMO?</b></h1>
       <p>Vi raccontiamo la Storia dell'Informatica</p>
       <p>La storia dell’Informatica è la storia di buona parte delle cose con cui viviamo quotidianamente. Dal computer a Internet agli smartphone; dai video in streaming, alla formazione online e ai social network. Conoscendo e comprendendo la storia dell’Informatica siamo in grado di capire come si sviluppa e come cambia il mondo di oggi.</p>
       <p>Il Museo Piemontese dell’Informatica è dedicato alla storia dell’informatica.
@@ -97,7 +97,7 @@
 
     <!-- Designers -->
     <div class="w3-container" id="designers" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>EVENTI</b></h1>
+      <h1 class="w3-xxxlarge"><b>EVENTI</b></h1>
       <p>il Mupin organizza degli eventi per ampliare la scoperta tecnologica.</p>
       <p>Dalla sua nascita, il Museo Piemontese dell’Informatica si è distinto per le tematiche di genere aderendo all’iniziativa Ada Lovelace Day: giornata mondiale dedicata alle donne e ai loro successi in ambito scientifico, tecnologico, ingegneristico e matematico.
         Dopo le esperienze acquisite con la partecipazione alla Notte dei Ricercatori, il Museo Piemontese dell’Informatica, a inizio 2015, ha avviato attività divulgative prettamente orientate all’infanzia, aderendo all’iniziativa CoderDojo della CoderDojo Foundation e creando il gruppo torinese: CoderDojo Torino.

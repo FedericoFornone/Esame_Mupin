@@ -426,7 +426,7 @@
 
 <body class="antialiased">
 
-  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container title-nav">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
@@ -440,7 +440,7 @@
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
     <div class="w3-container" id="contact"">
-      <h1 class=" w3-xxxlarge w3-text-red"><b>Nuovo artefatto</b></h1>
+      <h1 class=" w3-xxxlarge"><b>Nuovo artefatto</b></h1>
       <div class="intex">
         <p>Gli Amministratori del sito possono inserire nuovi Artefatti direttamente da qui!</p>
       </div>
@@ -558,7 +558,7 @@
           <input class="w3-input w3-border" type="text" name="tag">
         </div>
 
-        <button id="submitBtn" style="display: none;" type="submit" class="w3-button w3-block w3-padding-medium w3-red w3-margin-bottom mt-5">Aggiungi Artefatto</button>
+        <button id="submitBtn" style="display: none;" type="submit" class="w3-button w3-block w3-padding-medium w3-margin-bottom mt-5">Aggiungi Artefatto</button>
 
       </form>
 

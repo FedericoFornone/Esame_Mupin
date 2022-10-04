@@ -426,22 +426,23 @@
 
 <body class="antialiased">
 
-    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container title-nav">
             <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
         </div>
         <div class="w3-bar-block sidebar-nav">
             <a href="{{ url('home') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a></a>
+            <a href="{{ route('museum.index') }}" " class=" w3-bar-item w3-button w3-hover-white">Artefatti (Museo)</a>
         </div>
     </nav>
 
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
         <div class="w3-container" id="contact"">
-      <h1 class=" w3-xxxlarge w3-text-red"><b>Nuovo artefatto</b></h1>
+      <h1 class=" w3-xxxlarge"><b>Modifica Libro</b></h1>
             <div class="intex">
-                <p>Gli Amministratori del sito possono inserire nuovi Artefatti direttamente da qui!</p>
+                <p>Gli Amministratori del sito possono modificare gli Artefatti direttamente da qui!</p>
             </div>
 
 
@@ -500,7 +501,7 @@
                     <input class="w3-input w3-border" type="text" value="{{ old('tag', $book->tag) }}" name="tag">
                 </div>
 
-                <button id="submitBtn" type="submit" class="w3-button w3-block w3-padding-medium w3-red w3-margin-bottom mt-5">Modifica Artefatto</button>
+                <button id="submitBtn" type="submit" class="add-artifact w3-button w3-block w3-padding-medium w3-margin-bottom mt-5">Modifica Artefatto</button>
 
             </form>
 

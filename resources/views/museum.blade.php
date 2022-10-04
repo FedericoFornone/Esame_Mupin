@@ -427,7 +427,7 @@
 
 <body class="antialiased">
 
-  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container title-nav">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
@@ -453,7 +453,7 @@
 
     <!-- Header -->
     <div class="w3-container">
-      <h1 class="w3-xxxlarge w3-text-red"><b>ARTEFATTI</b></h1>
+      <h1 class="w3-xxxlarge"><b>ARTEFATTI</b></h1>
     </div>
 
     <!-- Header -->
@@ -461,12 +461,12 @@
       <div class="w3-container">
         <div class="w3-section w3-bottombar w3-padding-16">
           <span class="w3-margin-right">Filtro:</span>
-          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('all')">Tutto</button>
-          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('computer')">Computer</button>
-          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('rivista')">Riviste</button>
-          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('software')">Software</button>
-          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('libro')">Libri</button>
-          <button class="filter-btn w3-btn w3-red w3-hide-small" onclick="filterSelection('periferica')">Periferiche</button>
+          <button class="filter-btn w3-btn w3-hide-small" onclick="filterSelection('all')">Tutto</button>
+          <button class="filter-btn w3-btn w3-hide-small" onclick="filterSelection('computer')">Computer</button>
+          <button class="filter-btn w3-btn w3-hide-small" onclick="filterSelection('rivista')">Riviste</button>
+          <button class="filter-btn w3-btn w3-hide-small" onclick="filterSelection('software')">Software</button>
+          <button class="filter-btn w3-btn w3-hide-small" onclick="filterSelection('libro')">Libri</button>
+          <button class="filter-btn w3-btn w3-hide-small" onclick="filterSelection('periferica')">Periferiche</button>
         </div>
       </div>
 
@@ -503,11 +503,11 @@
               @if (Route::has('login'))
               @endif
               @else
-              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('computer.edit', $computer->id) }}">Modifica</a>
+              <a class="btn w3-btn" href="{{ route('computer.edit', $computer->id) }}">Modifica</a>
               <form class="crud-btn" action="{{ route('computer.destroy', $computer->id) }}" method="post">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+                <button type="submit" class="btn w3-btn">Elimina</button>
               </form>
               @endguest
 
@@ -542,11 +542,11 @@
               @if (Route::has('login'))
               @endif
               @else
-              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('magazine.edit', $magazine->id) }}">Modifica</a>
+              <a class="btn w3-btn" href="{{ route('magazine.edit', $magazine->id) }}">Modifica</a>
               <form class="crud-btn" action="{{ route('magazine.destroy', $magazine->id) }}" method="post">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+                <button type="submit" class="btn w3-btn">Elimina</button>
               </form>
               @endguest
 
@@ -580,11 +580,11 @@
               @if (Route::has('login'))
               @endif
               @else
-              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('software.edit', $software->id) }}">Modifica</a>
+              <a class="btn w3-btn" href="{{ route('software.edit', $software->id) }}">Modifica</a>
               <form class="crud-btn" action="{{ route('software.destroy', $software->id) }}" method="post">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+                <button type="submit" class="btn w3-btn">Elimina</button>
               </form>
               @endguest
 
@@ -618,11 +618,11 @@
               @if (Route::has('login'))
               @endif
               @else
-              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('book.edit', $book->id) }}">Modifica</a>
+              <a class="btn w3-btn" href="{{ route('book.edit', $book->id) }}">Modifica</a>
               <form class="crud-btn" action="{{ route('book.destroy', $book->id) }}" method="post">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+                <button type="submit" class="btn w3-btn">Elimina</button>
               </form>
               @endguest
 
@@ -653,11 +653,11 @@
               @if (Route::has('login'))
               @endif
               @else
-              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('peripheral.edit', $peripheral->id) }}">Modifica</a>
+              <a class="btn w3-btn" href="{{ route('peripheral.edit', $peripheral->id) }}">Modifica</a>
               <form class="crud-btn" action="{{ route('peripheral.destroy', $peripheral->id) }}" method="post">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+                <button type="submit" class="btn w3-btn">Elimina</button>
               </form>
               @endguest
 
