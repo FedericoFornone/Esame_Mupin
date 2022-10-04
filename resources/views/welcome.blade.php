@@ -423,11 +423,12 @@
 
 <body class="antialiased">
 
-  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"><br>
+
     <div class="w3-container title-nav">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
     </div>
+
     <div class="w3-bar-block sidebar-nav">
       <a href="{{ route('login') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span>[Login Amministratore]</span></a>
 
@@ -436,13 +437,14 @@
         <a href="{{ url('museum') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artefatti (Museo)</a>
       </form>
 
-      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chi siamo?</a>
-      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Eventi</a>
+      <a href="#chi_siamo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chi siamo?</a>
+      <a href="#eventi" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Eventi</a>
     </div>
+
   </nav>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <main style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
     <div class="w3-container" id="showcase">
@@ -473,18 +475,26 @@
       </div>
     </div>
 
-    <!-- Services -->
-    <div class="w3-container" id="services" style="margin-top:75px">
+
+    <!-- CHI SIAMO -->
+    <div class="w3-container" id="chi_siamo" style="margin-top:75px">
       <h1 class="w3-xxxlarge"><b>CHI SIAMO?</b></h1>
       <p>Vi raccontiamo la Storia dell'Informatica</p>
       <p>La storia dell’Informatica è la storia di buona parte delle cose con cui viviamo quotidianamente. Dal computer a Internet agli smartphone; dai video in streaming, alla formazione online e ai social network. Conoscendo e comprendendo la storia dell’Informatica siamo in grado di capire come si sviluppa e come cambia il mondo di oggi.</p>
       <p>Il Museo Piemontese dell’Informatica è dedicato alla storia dell’informatica.
         Il Museo Piemontese dell’Informatica è costituito da un insieme di collezioni, donate dai suoi soci fondatori, e da collezioni che sono state aggiunte successivamente.
         L’archivio del museo consta attualmente in oltre 6000 calcolatori, dai mainframe ai mini computer, dai personal agli home computer, dai coin-op alle console.</p>
+        <div class="image-section">
+        <img src="/resources/photo/content-mupin4.jpg" style="width:30%" alt="Logo">
+        <img src="/resources/photo/content-mupin3.jpg" style="width:30%" alt="Logo">
+        <img src="/resources/photo/content-mupin2.png" style="width:30%" alt="Logo">
+      </div>
+    </div>
     </div>
 
-    <!-- Designers -->
-    <div class="w3-container" id="designers" style="margin-top:75px">
+
+    <!--SEZIONE EVENTI -->
+    <div class="w3-container" id="eventi" style="margin-top:75px">
       <h1 class="w3-xxxlarge"><b>EVENTI</b></h1>
       <p>il Mupin organizza degli eventi per ampliare la scoperta tecnologica.</p>
       <p>Dalla sua nascita, il Museo Piemontese dell’Informatica si è distinto per le tematiche di genere aderendo all’iniziativa Ada Lovelace Day: giornata mondiale dedicata alle donne e ai loro successi in ambito scientifico, tecnologico, ingegneristico e matematico.
@@ -492,67 +502,60 @@
       </p>
       <p>Il Museo Piemontese dell’Informatica organizza anche eventi di ampio respiro internazionale come A bit of [hi]story, incentrato su esposizione, conferenze e laboratori. Ogni mese, inoltre, organizza incontri tematici in locali in cui si possa mangiare e bere qualcosa mentre si discute. Questi eventi sono denominati A bit of beer.
       </p>
-      <p><b>Questi sono gli eventi in corso</b>:</p><br>
-    </div>
-
-    <!-- The Team -->
-    <div class="w3-row-padding w3-grayscale">
-      <div class="w3-col m4 w3-margin-bottom">
-        <div class="w3-light-grey">
-          <div class="w3-container">
-            <a href="https://www.mupin.it/ada-lovelace-day-italia/"><b>Lovelace Day</b></a>
-            <p class="w3-opacity">27 Settembre - 10 Ottobre</p>
-            <p>L’Ada Lovelace Day è un evento internazionale dedicato alle donne e ai loro risultati in ambito scientifico, tecnologico ingegneristico e matematico.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="w3-col m4 w3-margin-bottom">
-        <div class="w3-light-grey">
-          <div class="w3-container">
-            <a href="https://www.mupin.it/umani-e-macchine/"><b>Videogame, Arte e oltre</b></a>
-            <p class="w3-opacity">2 Settembre - 28 Settembre</p>
-            <p>Alla Venaria Reale la grande mostra in cui vengono esposti videogame arte e molto altro ancora, con la partecipazione del Mupin e di molti professionisti.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-col m4 w3-margin-bottom">
-        <div class="w3-light-grey">
-          <div class="w3-container">
-            <a href="https://www.mupin.it/a-bit-of-history/"><b>A bit of [hi]story</b></a>
-            <p class="w3-opacity">12 Settembre - 30 Settembre</p>
-            <p>A bit of [hi]story è il festival dell’innovazione organizzato dall’associazione culturale Museo Piemontese dell’Informatica che si svolge ogni anno a partire dal 2016.</p>
-          </div>
-        </div>
-      </div>
+      <p><b>Questi sono gli eventi in corso</b>:</p>
     </div>
 
 
+    <!-- EVENTI -->
+    <a href="https://www.mupin.it/ada-lovelace-day-italia/" class="w3-col m4">
+      <div class="event w3-container">
+        <h2><b>"Lovelace Day"</b></h2>
+        <p class="w3-opacity">27 Settembre - 10 Ottobre</p>
+        <p>L’Ada Lovelace Day è un evento internazionale dedicato alle donne e ai loro risultati in ambito scientifico, tecnologico ingegneristico e matematico.</p>
+      </div>
+    </a>
+
+    <a href="https://www.mupin.it/umani-e-macchine/" class="w3-col m4">
+      <div class="event w3-container">
+        <h2><b>"Videogame, Arte e oltre"</b></h2>
+        <p class="w3-opacity">2 Settembre - 28 Settembre</p>
+        <p>Alla Venaria Reale la grande mostra in cui vengono esposti videogame arte e molto altro ancora, con la partecipazione del Mupin e di molti professionisti.</p>
+      </div>
+    </a>
+
+    <a href="https://www.mupin.it/a-bit-of-history/" class="w3-col m4">
+      <div class="event w3-container">
+        <h2><b>"A bit of [hi]story"</b></h2>
+        <p class="w3-opacity">12 Settembre - 30 Settembre</p>
+        <p>A bit of [hi]story è il festival dell’innovazione organizzato dall’associazione culturale Museo Piemontese dell’Informatica che si svolge ogni anno a partire dal 2016.</p>
+      </div>
+    </a>
+
+  </main>
 
 
-    <script>
-      // Script to open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-      }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
 
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-    </script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
 
-    @endsection
+  @endsection
 
 </body>
 

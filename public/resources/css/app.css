@@ -35,11 +35,12 @@
     margin-top: 5%;
 }
 
+
+
 /* Main Section */
 .w3-xxxlarge b{
     font-size: 100px;
 }
-
 
 .w3-container h1 {
     color: #1d37ab;
@@ -57,6 +58,16 @@
     margin-top: 10%;
 }
 
+.image-section{
+    margin-top: 60px;
+}
+
+.image-section img{
+    margin-right: 40px;
+    border: solid 3px #1d37ab;
+    border-radius: 20px;
+}
+
 .intex {
     font-size: 25px;
 }
@@ -70,11 +81,33 @@ p {
 }
 
 
+
+
 /* Eventi */
-.w3-col a {
-    font-size: 20px;
-    text-decoration: none;
+.event{
+    padding: 20px;
+    margin: 20px;
+    background-color: #1d37ab;
+    border-radius: 40px;
 }
+
+.event:hover{
+    padding: 20px;
+    margin: 20px;
+    color: #1d37ab;
+    background-color: #ffffff;
+    border: 5px solid #1d37ab;
+    border-radius: 40px;
+}
+
+
+.w3-col {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
 
 
 /* Descrizione Artefatti Principale */
@@ -89,13 +122,14 @@ p {
 
 
 
-/* Logout Dropdown */
+/* Login */
 .nav-item a {
     font-size: 20px;
     text-align: center;
     color: #1d37ab;
 
     width: 200px;
+
     border: 1px solid #1d37ab;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -106,28 +140,23 @@ p {
     color: white;
 }
 
-ul a {
-    color: #1d37ab;
-    margin-right: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.274);
-    border-radius: 5px;
+/* Logout Dropdown */
+.dropdown-menu{
+    border: 1px solid #1d37ab;
 }
 
 .dropdown span{
     color: #1d37ab;
 }
 
-.dropdown-menu{
-    border: 1px solid #1d37ab;
-}
-
 .dropdown button {
     font-size: 20px;
+    text-align: center;
     color: #1d37ab;
-
+    
     width: 200px;
-    height: 40px;
-
+    
+    padding: 8px;
     margin-right: 30px;
     border: 1px solid #1d37ab;
     border-radius: 10px;
@@ -139,6 +168,12 @@ ul a {
     color: white;
 }
 
+ul a {
+    color: #1d37ab;
+    margin-right: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
+}
 
 
 /* Artefatti Museo */
@@ -147,14 +182,13 @@ button {
 }
 
 .filterDiv h1{
-    font-size: 50px;
     text-align: center;
+    font-size: 50px;
     color: #1d37ab;
-
-    /* text-decoration: underline;
-    text-underline-offset: 15px;
-    text-decoration-thickness: 5px; */
+    
+    width: 30%;
     border: 5px solid #1d37ab;
+    border-radius: 40px;
     margin-bottom: 40px;
     padding: 10px;
 }
@@ -163,12 +197,9 @@ button {
     margin-top: 5%;
 }
 
-.w3-margin-right {
-    font-size: 10px;
-}
-
 .crud-btn{
-    margin-top: 30px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .w3-third a{
@@ -190,18 +221,18 @@ button {
 }
 
 .filter-btn:focus{
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #1d37ab;
+    border: 2px solid #1d37ab;
     zoom: 150%;
 }
 
-.filter-btn:active{
-    background-color: #ffffff;
-    color: #1d37ab;
-}
-
 .filter-btn:hover{
+    font-weight: bold;
     background-color: #ffffff;
     color: #1d37ab;
-    border: 1px solid #1d37ab;
+    border: 2px solid #1d37ab;
 }
 
 .container-filter {

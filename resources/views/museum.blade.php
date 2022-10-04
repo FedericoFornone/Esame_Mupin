@@ -427,11 +427,12 @@
 
 <body class="antialiased">
 
-  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"><br>
+
     <div class="w3-container title-nav">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
     </div>
+
     @guest
     @if (Route::has('login'))
     <div class="w3-bar-block sidebar-nav">
@@ -445,6 +446,7 @@
       <a href="{{ route('museum.create') }}" class="w3-bar-item w3-button w3-hover-white">Nuovo Artefatto</a>
     </div>
     @endguest
+
   </nav>
 
 
