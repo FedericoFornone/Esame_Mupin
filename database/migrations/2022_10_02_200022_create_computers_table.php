@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('computers', function (Blueprint $table) {
             $table->id();
+            $table->string('image')->nullable();
             $table->string('modello');
             $table->integer('anno');
             $table->string('cpu');
@@ -22,9 +23,9 @@ return new class extends Migration
             $table->string('memoria');
             $table->string('hard_disk');
             $table->string('os');
-            $table->string('note');
-            $table->string('url');
-            $table->string('tag'); 
+            $table->string('note')->nullable();
+            $table->string('url')->nullable();
+            $table->string('tag')->nullable();
             $table->timestamps();
         });
     }

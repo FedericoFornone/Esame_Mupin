@@ -1,6 +1,7 @@
 const elem = document.getElementById("artifact");
 const submitBtn = document.getElementById("submitBtn");
 
+const inputImg = document.getElementById("inputImg");
 const inputTitolo = document.getElementById("inputTitolo");
 const inputAut = document.getElementById("inputAut");
 const inputNumero = document.getElementById("inputNumero");
@@ -27,6 +28,7 @@ elem.addEventListener("change", function (e) {
     value = document.getElementById("artifact").value;
 
     if (value == "") {
+        inputImg.style.display = "none";
         inputCPU.style.display = "none";
         inputTitolo.style.display = "none";
         inputAut.style.display = "none";
@@ -50,6 +52,7 @@ elem.addEventListener("change", function (e) {
 
         submitBtn.style.display = "none";
     }else{
+        inputImg.style.display = "block";
         inputNote.style.display = "block";
         inputURL.style.display = "block";
         inputTag.style.display = "block";

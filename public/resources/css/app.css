@@ -91,7 +91,7 @@ p {
 }
 
 .nav-item a:hover {
-    background-color: rgb(255, 27, 27);
+    background-color: #fc3d03;
     color: white;
 }
 
@@ -115,7 +115,7 @@ ul a {
 }
 
 .dropdown button:hover {
-    background-color: rgb(255, 27, 27);
+    background-color: #fc3d03;
     color: white;
 }
 

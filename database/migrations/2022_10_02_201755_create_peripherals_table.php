@@ -15,11 +15,12 @@ return new class extends Migration
     {
         Schema::create('peripherals', function (Blueprint $table) {
             $table->id();
+            $table->string('image')->nullable();
             $table->string('modello');
             $table->string('tipologia');
-            $table->string('note');
-            $table->string('url');
-            $table->string('tag'); 
+            $table->string('note')->nullable();
+            $table->string('url')->nullable();
+            $table->string('tag')->nullable();
             $table->timestamps();
         });
     }

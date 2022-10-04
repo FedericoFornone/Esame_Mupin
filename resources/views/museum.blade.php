@@ -480,174 +480,191 @@
 
     <ul id='list' class="container-filter">
       <!-- Computer Grid-->
-      <div class="artifact filterDiv computer w3-row-padding row-item">
-        <h1><b>Computer</b></h1>
-        @foreach ($computers as $computer)
-        <div class="filterDiv computer w3-third w3-margin-bottom">
-          <li class="w3-container w3-white">
-            <img src="/resources/photo/Computer.jpg" alt="Norway" style="width:70%" class="image w3-hover-opacity" onclick="onClick(this)" alt="Computer">
-            <h2><b>{{$computer->modello}}</b></h2>
-            <h5><b>Modello:</b> {{$computer->modello}}</h5>
-            <h5><b>Anno:</b> {{$computer->anno}}</h5>
-            <h5><b>Sistema Operativo:</b> {{$computer->os}}</h5>
-            <h5><b>Velocità:</b> {{$computer->velocita}}Hz</h5>
-            <h5><b>Memoria:</b> {{$computer->memoria}}</h5>
-            <h5><b>CPU:</b> {{$computer->cpu}}</h5>
-            <h5><b>Note:</b> {{$computer->note}}</h5>
-            <h5><b>URL:</b> {{$computer->url}}</h5>
-            <h5><b>Tag:</b> {{$computer->tag}}</h5>
+      <div class="artifact">
 
-            @guest
-            @if (Route::has('login'))
-            @endif
-            @else
-            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('computer.edit', $computer->id) }}">Modifica</a>
-            <form class="crud-btn" action="{{ route('computer.destroy', $computer->id) }}" method="post">
-              @csrf
-              @method('delete')
-              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
-            </form>
-            @endguest
+        <div class="filterDiv computer w3-row-padding row-item">
+          <h1><b>Computer</b></h1>
+          @foreach ($computers as $computer)
+          <div class="filterDiv computer w3-third w3-margin-bottom">
+            <li class="artifact-item w3-container w3-white">
+              <img src="/resources/photo/Computer.jpg" alt="Norway" style="width:70%" class="image w3-hover-opacity" onclick="onClick(this)" alt="Computer">
+              <h2><b>{{$computer->modello}}</b></h2>
+              <h5><b>Modello:</b> {{$computer->modello}}</h5>
+              <h5><b>Anno:</b> {{$computer->anno}}</h5>
+              <h5><b>Sistema Operativo:</b> {{$computer->os}}</h5>
+              <h5><b>Velocità:</b> {{$computer->velocita}}Hz</h5>
+              <h5><b>Memoria:</b> {{$computer->memoria}}</h5>
+              <h5><b>CPU:</b> {{$computer->cpu}}</h5>
+              <h5><b>Note:</b> {{$computer->note}}</h5>
+              <h5><b>URL:</b> {{$computer->url}}</h5>
+              <h5><b>Tag:</b> {{$computer->tag}}</h5>
 
-          </li>
+              @guest
+              @if (Route::has('login'))
+              @endif
+              @else
+              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('computer.edit', $computer->id) }}">Modifica</a>
+              <form class="crud-btn" action="{{ route('computer.destroy', $computer->id) }}" method="post">
+                @csrf
+                @method('delete')
+                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+              </form>
+              @endguest
+
+            </li>
+          </div>
+          @endforeach
         </div>
-        @endforeach
       </div>
+
 
 
 
       <!--Riviste Grid-->
-      <div class="artifact filterDiv rivista w3-row-padding row-item">
-        <h1><b>Riviste</b></h1>
-        @foreach ($magazines as $magazine)
-        <div class="filterDiv rivista w3-third w3-margin-bottom">
-          <li class=" w3-container w3-white">
-            <img src="/resources/photo/Rivista.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
-            <h2><b>{{$magazine->titolo}}</b></h2>
-            <h5><b>Numero:</b> {{$magazine->numero}}</h5>
-            <h5><b>Anno:</b> {{$magazine->anno}}</h5>
-            <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
-            <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
-            <h5><b>Note:</b> {{$magazine->note}}</h5>
-            <h5><b>URL:</b> {{$magazine->url}}</h5>
-            <h5><b>Tag:</b> {{$magazine->tag}}</h5>
+      <div class="artifact">
 
-            @guest
-            @if (Route::has('login'))
-            @endif
-            @else
-            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('magazine.edit', $magazine->id) }}">Modifica</a>
-            <form class="crud-btn" action="{{ route('magazine.destroy', $magazine->id) }}" method="post">
-              @csrf
-              @method('delete')
-              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
-            </form>
-            @endguest
+        <div class=" filterDiv rivista w3-row-padding row-item">
+          <h1><b>Riviste</b></h1>
+          @foreach ($magazines as $magazine)
+          <div class="filterDiv rivista w3-third w3-margin-bottom">
+            <li class=" w3-container w3-white">
+              <img src="/resources/photo/Rivista.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+              <h2><b>{{$magazine->titolo}}</b></h2>
+              <h5><b>Numero:</b> {{$magazine->numero}}</h5>
+              <h5><b>Anno:</b> {{$magazine->anno}}</h5>
+              <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
+              <h5><b>Casa Editrice:</b> {{$magazine->casa_editrice}}</h5>
+              <h5><b>Note:</b> {{$magazine->note}}</h5>
+              <h5><b>URL:</b> {{$magazine->url}}</h5>
+              <h5><b>Tag:</b> {{$magazine->tag}}</h5>
 
-          </li>
+              @guest
+              @if (Route::has('login'))
+              @endif
+              @else
+              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('magazine.edit', $magazine->id) }}">Modifica</a>
+              <form class="crud-btn" action="{{ route('magazine.destroy', $magazine->id) }}" method="post">
+                @csrf
+                @method('delete')
+                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+              </form>
+              @endguest
+
+            </li>
+          </div>
+          @endforeach
         </div>
-        @endforeach
       </div>
 
 
 
+
       <!--Software Grid-->
-      <div class="artifact filterDiv software w3-row-padding row-item">
-        <h1><b>Software</b></h1>
-        @foreach ($softwares as $software)
-        <div class="filterDiv software w3-third w3-margin-bottom">
-          <li class=" w3-container w3-white">
-            <img src="/resources/photo/Software.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
-            <h2><b>{{$software->titolo}}</b></h2>
-            <h5><b>Sistema Operativo:</b> {{$software->os}}</h5>
-            <h5><b>Tipologia:</b> {{$software->tipologia}}</h5>
-            <h5><b>Supporto:</b> {{$software->supporto}}</h5>
-            <h5><b>Note:</b> {{$software->note}}</h5>
-            <h5><b>URL:</b> {{$software->url}}</h5>
-            <h5><b>Tag:</b> {{$software->tag}}</h5>
+      <div class="artifact">
 
-            @guest
-            @if (Route::has('login'))
-            @endif
-            @else
-            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('software.edit', $software->id) }}">Modifica</a>
-            <form class="crud-btn" action="{{ route('software.destroy', $software->id) }}" method="post">
-              @csrf
-              @method('delete')
-              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
-            </form>
-            @endguest
+        <div class=" filterDiv software w3-row-padding row-item">
+          <h1><b>Software</b></h1>
+          @foreach ($softwares as $software)
+          <div class="filterDiv software w3-third w3-margin-bottom">
+            <li class="artifact-item w3-container w3-white">
+              <img src="/resources/photo/Software.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+              <h2><b>{{$software->titolo}}</b></h2>
+              <h5><b>Sistema Operativo:</b> {{$software->os}}</h5>
+              <h5><b>Tipologia:</b> {{$software->tipologia}}</h5>
+              <h5><b>Supporto:</b> {{$software->supporto}}</h5>
+              <h5><b>Note:</b> {{$software->note}}</h5>
+              <h5><b>URL:</b> {{$software->url}}</h5>
+              <h5><b>Tag:</b> {{$software->tag}}</h5>
 
-          </li>
+              @guest
+              @if (Route::has('login'))
+              @endif
+              @else
+              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('software.edit', $software->id) }}">Modifica</a>
+              <form class="crud-btn" action="{{ route('software.destroy', $software->id) }}" method="post">
+                @csrf
+                @method('delete')
+                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+              </form>
+              @endguest
+
+            </li>
+          </div>
+          @endforeach
         </div>
-        @endforeach
       </div>
 
 
 
       <!--Libri Grid-->
-      <div class="artifact filterDiv libro w3-row-padding row-item">
-        <h1><b>Libri</b></h1>
-        @foreach ($books as $book)
-        <div class="filterDiv libro w3-third w3-margin-bottom">
-          <li class="w3-container w3-white">
-            <img src="/resources/photo/Libro.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
-            <h2><b>{{$book->titolo}}</b></h2>
-            <h5><b>Autori:</b> {{$book->autori}}</h5>
-            <h5><b>Casa Editrice:</b> {{$book->casa_editrice}}</h5>
-            <h5><b>Anno di Pubblicazione:</b> {{$book->anno_pubblicazione}}</h5>
-            <h5><b>Numero di pagine:</b> {{$book->n_pagine}}</h5>
-            <h5><b>Note:</b> {{$book->note}}</h5>
-            <h5><b>URL:</b> {{$book->url}}</h5>
-            <h5><b>Tag:</b> {{$book->tag}}</h5>
+      <div class="artifact">
 
-            @guest
-            @if (Route::has('login'))
-            @endif
-            @else
-            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('book.edit', $book->id) }}">Modifica</a>
-            <form class="crud-btn" action="{{ route('book.destroy', $book->id) }}" method="post">
-              @csrf
-              @method('delete')
-              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
-            </form>
-            @endguest
+        <div class=" filterDiv libro w3-row-padding row-item">
+          <h1><b>Libri</b></h1>
+          @foreach ($books as $book)
+          <div class="filterDiv libro w3-third w3-margin-bottom">
+            <li class="artifact-item w3-container w3-white">
+              <img src="/resources/photo/Libro.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+              <h2><b>{{$book->titolo}}</b></h2>
+              <h5><b>Autori:</b> {{$book->autori}}</h5>
+              <h5><b>Casa Editrice:</b> {{$book->casa_editrice}}</h5>
+              <h5><b>Anno di Pubblicazione:</b> {{$book->anno_pubblicazione}}</h5>
+              <h5><b>Numero di pagine:</b> {{$book->n_pagine}}</h5>
+              <h5><b>Note:</b> {{$book->note}}</h5>
+              <h5><b>URL:</b> {{$book->url}}</h5>
+              <h5><b>Tag:</b> {{$book->tag}}</h5>
 
-          </li>
+              @guest
+              @if (Route::has('login'))
+              @endif
+              @else
+              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('book.edit', $book->id) }}">Modifica</a>
+              <form class="crud-btn" action="{{ route('book.destroy', $book->id) }}" method="post">
+                @csrf
+                @method('delete')
+                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+              </form>
+              @endguest
+
+            </li>
+          </div>
+          @endforeach
         </div>
-        @endforeach
       </div>
 
 
 
       <!--Periferiche Grid-->
-      <div class="artifact filterDiv periferica w3-row-padding row-item">
-        <h1><b>Periferiche</b></h1>
-        @foreach ($peripherals as $peripheral)
-        <div class="filterDiv periferica w3-third w3-margin-bottom">
-          <li class="w3-container w3-white">
-            <img src="/resources/photo/Periferiche.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
-            <h2><b>{{$peripheral->modello}}</b></h2>
-            <h5><b>Tipologia:</b> {{$peripheral->tipologia}}</h5>
-            <h5><b>Note:</b> {{$peripheral->note}}</h5>
-            <h5><b>URL:</b> {{$peripheral->url}}</h5>
-            <h5><b>Tag:</b> {{$peripheral->tag}}</h5>
+      <div class="artifact">
 
-            @guest
-            @if (Route::has('login'))
-            @endif
-            @else
-            <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('peripheral.edit', $peripheral->id) }}">Modifica</a>
-            <form class="crud-btn" action="{{ route('peripheral.destroy', $peripheral->id) }}" method="post">
-              @csrf
-              @method('delete')
-              <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
-            </form>
-            @endguest
+        <div class=" filterDiv periferica w3-row-padding row-item">
+          <h1><b>Periferiche</b></h1>
+          @foreach ($peripherals as $peripheral)
+          <div class="filterDiv periferica w3-third w3-margin-bottom">
+            <li class="artifact-item w3-container w3-white">
+              <img src="/resources/photo/Periferiche.jpg" alt="Norway" style="width:70%" onclick="onClick(this)" alt="Computer">
+              <h2><b>{{$peripheral->modello}}</b></h2>
+              <h5><b>Tipologia:</b> {{$peripheral->tipologia}}</h5>
+              <h5><b>Note:</b> {{$peripheral->note}}</h5>
+              <h5><b>URL:</b> {{$peripheral->url}}</h5>
+              <h5><b>Tag:</b> {{$peripheral->tag}}</h5>
 
-          </li>
+              @guest
+              @if (Route::has('login'))
+              @endif
+              @else
+              <a class="btn w3-btn w3-red w3-hide-small" href="{{ route('peripheral.edit', $peripheral->id) }}">Modifica</a>
+              <form class="crud-btn" action="{{ route('peripheral.destroy', $peripheral->id) }}" method="post">
+                @csrf
+                @method('delete')
+                <button type="submit" class="btn w3-btn w3-red w3-hide-small">Elimina</button>
+              </form>
+              @endguest
+
+            </li>
+          </div>
+          @endforeach
         </div>
-        @endforeach
       </div>
     </ul>
 

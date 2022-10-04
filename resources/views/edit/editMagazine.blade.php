@@ -450,10 +450,16 @@
                 @csrf
                 @method('PUT')
 
+                <div id="inputImg" style="display: none;">
+                    <label>Aggiungi Immagine</label>
+                    <input type="file" class="form-control" value="{{ old('image', $magazine->image) }}" name="image">
+                </div>
+
                 <div id="inputTitolo" class="w3-section">
                     <label>Titolo</label>
                     <input class="w3-input w3-border" value="{{ old('titolo', $magazine->titolo) }}" type="text" name="titolo" required>
                 </div>
+
                 <div id="inputNumero" class="w3-section">
                     <label>Numero</label>
                     <input class="w3-input w3-border" value="{{ old('numero', $magazine->numero) }}" type="text" name="numero" required>
@@ -463,6 +469,7 @@
                     <label>Anno</label>
                     <input class="w3-input w3-border" type="text" value="{{ old('anno', $magazine->anno) }}" name="anno">
                 </div>
+
                 <div id="inputCasa" class="w3-section">
                     <label>Casa Editrice</label>
                     <input class="w3-input w3-border" type="text" value="{{ old('casa_editrice', $magazine->casa_editrice) }}" name="casa_editrice">

@@ -13,16 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('magazines', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->string('image')->nullable();
-            $table->string('titolo');
-            $table->integer('numero');
-            $table->integer('anno');
-            $table->string('casa_editrice');
-            $table->string('note')->nullable();
-            $table->string('url')->nullable();
-            $table->string('tag')->nullable();
+            $table->string('image')->nullable()->change();;
             $table->timestamps();
         });
     }
@@ -34,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('magazines');
+        Schema::dropIfExists('images');
     }
 };

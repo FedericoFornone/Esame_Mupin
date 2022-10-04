@@ -457,6 +457,11 @@
           <option value='periferica'>Periferica</option>
         </select>
 
+        <div id="inputImg" style="display: none;">
+          <label>Aggiungi Immagine</label>
+          <input type="file" class="form-control" name="image">
+        </div>
+
         <div id="inputTitolo" style="display: none;" class="w3-section">
           <label>Titolo</label>
           <input class="w3-input w3-border" type="text" name="titolo">

@@ -450,6 +450,11 @@
                 @csrf
                 @method('PUT')
 
+                <div id="inputImg" style="display: none;">
+                    <label>Aggiungi Immagine</label>
+                    <input type="file" class="form-control" value="{{ old('image', $computer->image) }}" name="image">
+                </div>
+
                 <div id="inputModello" class="w3-section">
                     <label>Modello</label>
                     <input class="w3-input w3-border" type="text" value="{{ old('modello', $computer->modello) }}" name="modello">

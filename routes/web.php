@@ -26,6 +26,8 @@ Route::resource('/magazine', App\Http\Controllers\MagazineController::class);
 Route::resource('/software', App\Http\Controllers\SoftwareController::class);
 Route::resource('/peripheral', App\Http\Controllers\PeripheralController::class);
 Route::resource('/book', App\Http\Controllers\BookController::class);
+Route::resource('/image', App\Http\Controllers\ImageController::class);
+
 
 Route::get('/', function () {
     return view('welcome');

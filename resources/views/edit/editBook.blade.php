@@ -450,6 +450,11 @@
                 @csrf
                 @method('PUT')
 
+                <div id="inputImg" style="display: none;">
+                    <label>Aggiungi Immagine</label>
+                    <input type="file" class="form-control" value="{{ old('image', $book->image) }}" name="image">
+                </div>
+
                 <div id="inputTitolo" class="w3-section">
                     <label>Titolo</label>
                     <input class="w3-input w3-border" value="{{ old('titolo', $book->titolo) }}" type="text" name="titolo" required>
@@ -469,7 +474,7 @@
                     <label>Anno di Pubblicazione</label>
                     <input class="w3-input w3-border" type="text" value="{{ old('anno_pubblicazione', $book->anno_pubblicazione) }}" name="anno_pubblicazione">
                 </div>
-                
+
                 <div id="inputPag" class="w3-section">
                     <label>Numero di Pagine</label>
                     <input class="w3-input w3-border" type="text" value="{{ old('n_pagine', $book->n_pagine) }}" name="n_pagine">
@@ -479,7 +484,7 @@
                     <label>Codice ISBN</label>
                     <input class="w3-input w3-border" type="text" value="{{ old('isbn', $book->isbn) }}" name="isbn">
                 </div>
-                
+
                 <div id="inputNote" class="w3-section">
                     <label>Note</label>
                     <input class="w3-input w3-border" type="text" value="{{ old('note', $book->note) }}" name="note">
