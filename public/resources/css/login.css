@@ -1,0 +1,52 @@
+/* Login */
+.nav-item a {
+    font-size: 20px;
+    text-align: center;
+    color: #1d37ab;
+
+    width: 200px;
+
+    border: 1px solid #1d37ab;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-item a:hover {
+    background-color: #1d37ab;
+    color: white;
+}
+
+/* Logout Dropdown */
+.dropdown button {
+    font-size: 20px;
+    text-align: center;
+    color: #1d37ab;
+
+    width: 200px;
+
+    padding: 8px;
+    margin-right: 30px;
+    border: 1px solid #1d37ab;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown button:hover {
+    background-color: #1d37ab;
+    color: white;
+}
+
+.dropdown span {
+    color: #1d37ab;
+}
+
+.dropdown-menu {
+    width: 200px;
+}
+
+ul a {
+    color: #1d37ab;
+    margin-right: 30px;
+    border: 1px solid #1d37ab;
+    border-radius: 5px;
+}

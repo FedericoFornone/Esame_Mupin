@@ -455,7 +455,7 @@
                     <label>Aggiungi Immagine</label>
                     <input type="file" class="form-control" value="{{ old('image', $peripheral->image) }}" name="image">
                 </div>
-                
+
                 <div id="inputModello" class="w3-section">
                     <label>Modello</label>
                     <input class="w3-input w3-border" value="{{ old('modello', $peripheral->modello) }}" type="text" name="modello" required>

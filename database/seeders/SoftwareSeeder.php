@@ -19,31 +19,31 @@ class SoftwareSeeder extends Seeder
             [
                 "titolo" => "Adobe Acrobat",
                 "os" => "Windows/Linux",
-                "tipologia" => 'multiservizio',
-                "supporto" => 'Tutte le versioni',
-                "note" => " ",
+                "tipologia" => "multiservizio",
+                "supporto" => "Tutte le versioni",
+                "note" => "Applicazione desktop realizzata per creare e modificare file in formato PDF...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Adobe, Service",
             ],
 
             [
                 "titolo" => "Microsoft Office",
                 "os" => "Windows/Linux",
-                "tipologia" => 'multiservizio',
-                "supporto" => 'Tutte le versioni',
-                "note" => " ",
+                "tipologia" => "multiservizio",
+                "supporto" => "Tutte le versioni",
+                "note" => "Suite di applicazioni desktop, server e servizi di tipo office automation...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Office, Pacchetto",
             ],
 
             [
                 "titolo" => "Autocad",
                 "os" => "Windows/Linux/Ios",
-                "tipologia" => 'progettazione',
-                "supporto" => 'Tutte le versioni',
-                "note" => " ",
+                "tipologia" => "progettazione",
+                "supporto" => "Tutte le versioni",
+                "note" => "Programma di disegno tecnico assistito dal computer ideato da Autodesk...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Progettazione, Service",
             ],
 
 

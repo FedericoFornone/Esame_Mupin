@@ -39,9 +39,8 @@
 
 <body>
 
-  <!-- Sidebar/menu -->
+  <!-- SIDEBAR -->
   <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"><br>
-
     <div class="w3-container title-amm">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
       <h4>Amministratore</h4>
@@ -53,7 +52,6 @@
       <a href="#chi_siamo" class="w3-bar-item w3-button w3-hover-white">Chi Siamo?</a>
       <a href="#eventi" class="w3-bar-item w3-button w3-hover-white">Eventi</a>
     </div>
-
   </nav>
 
   <!-- !PAGE CONTENT! -->

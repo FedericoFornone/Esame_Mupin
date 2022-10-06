@@ -18,26 +18,26 @@ class PeripheralSeeder extends Seeder
         $peripherals = [
             [
                 "modello" => "Tastiera Logitec",
-                "tipologia" => 'input',
-                "note" => " ",
+                "tipologia" => "input",
+                "note" => "Periferica utilizzata in input per scrivere...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Keyboard, Logitec",
             ],
 
             [
-                "modello" => "Cuffie della Smermax",
-                "tipologia" => 'output',
-                "note" => " ",
+                "modello" => "Cuffie Smermax",
+                "tipologia" => "output",
+                "note" => "Cuffie di ultima generazione per ascoltare ogni tipo di...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Headphones, Sound",
             ],
 
             [
                 "modello" => "Proiettore Samsung",
-                "tipologia" => 'input',
-                "note" => " ",
+                "tipologia" => "input",
+                "note" => "Nel campo della proiezione video non ci sono...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Samsung, Video",
             ],
 
         ];

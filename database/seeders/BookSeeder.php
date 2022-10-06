@@ -18,19 +18,19 @@ class BookSeeder extends Seeder
         $books = [
             [
                 "titolo" => "Errore di Sistema",
-                "autori" => 'Edward Snowden',
+                "autori" => "Edward Snowden",
                 "casa_editrice" => "Longanesi",
                 "anno_pubblicazione" => 2019,
                 "n_pagine" => 347,
                 "isbn" => 46221674,
-                "note" => "Mi chiamo Edward Joseph Snowden...",
+                "note" => "Mi chiamo Edward Joseph Snowden e non so perchè sono qui...",
                 "url" => " ",
                 "tag" => "Info, Storia",
             ],
 
             [
-                "titolo" => "Il giorno del Bianconiglio",
-                "autori" => 'Alessandro Curioni',
+                "titolo" => "Bianconiglio",
+                "autori" => "Alessandro Curioni",
                 "casa_editrice" => "Chiarelettere",
                 "anno_pubblicazione" => 2021,
                 "n_pagine" => 312,
@@ -42,7 +42,7 @@ class BookSeeder extends Seeder
 
             [
                 "titolo" => "L'arte dell'hacking",
-                "autori" => 'Kevin D. Mitnick',
+                "autori" => "Kevin D. Mitnick",
                 "casa_editrice" => "Cuzzullo",
                 "anno_pubblicazione" => 2016,
                 "n_pagine" => 390,

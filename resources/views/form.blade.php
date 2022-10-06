@@ -426,11 +426,13 @@
 
 <body class="antialiased">
 
-  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <!-- SIDEBAR -->
+  <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" <br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container title-nav">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
     </div>
+
     <div class="w3-bar-block sidebar-nav">
       <a href="{{ url('home') }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a></a>
       <a href="{{ route('museum.index') }}" " class=" w3-bar-item w3-button w3-hover-white">Artefatti (Museo)</a>
@@ -438,7 +440,7 @@
   </nav>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <main style="margin-left:340px;margin-right:40px">
     <div class="w3-container" id="contact"">
       <h1 class=" w3-xxxlarge"><b>Nuovo artefatto</b></h1>
       <div class="intex">
@@ -448,7 +450,7 @@
 
       <form action="{{ route('museum.store') }}" method="post" enctype="multipart/form-data">
         @csrf
-        <label class="mb-3"><b>Seleziona un Artefatto</b></label>
+        <label class="mb-3"><b>Seleziona il tipo di Artefatto</b></label>
         <select id="artifact" name="artifact" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
           <option value="">--Scegli un opzione--</option>
           <option value='computer'>Computer</option>

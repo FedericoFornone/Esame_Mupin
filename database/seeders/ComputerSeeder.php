@@ -24,21 +24,22 @@ class ComputerSeeder extends Seeder
                 "memoria" => "20 kb",
                 "hard_disk" => "Azure",
                 "os" => "Linux",
-                "note" => " ",
+                "note" => "Fu immesso sul mercato due anni dopo il Commodore VIC-20...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "64, Retrò",
             ],
 
             [
                 "modello" => "Macintosh Plus",
                 "anno" => 1986,
                 "cpu" => "Cask Bujuri 0034/6000",
-                "velocita" => 1.32, "memoria" => "30 kb",
+                "velocita" => 1.32,
+                "memoria" => "30 kb",
                 "hard_disk" => "Complex",
                 "os" => "IOS",
-                "note" => " ",
+                "note" => "È stato commercializzato come evoluzione del primo Macintosh...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Mac, Apple",
             ],
 
             [
@@ -49,9 +50,9 @@ class ComputerSeeder extends Seeder
                 "memoria" => "50 mb",
                 "hard_disk" => "Jepxin",
                 "os" => "WIndows",
-                "note" => " ",
+                "note" => "Il primo computer portatile compatibile IBM PC realizzati da Amstrad...",
                 "url" => " ",
-                "tag" => " ",
+                "tag" => "Retrò, Win",
             ],
         ];
         foreach ($computers as $computer) {

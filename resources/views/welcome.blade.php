@@ -423,8 +423,8 @@
 
 <body class="antialiased">
 
+  <!-- SIDEBAR -->
   <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"><br>
-
     <div class="w3-container title-nav">
       <img src="/resources/photo/logo.png" style="width:90%" alt="Logo">
     </div>
@@ -440,7 +440,6 @@
       <a href="#chi_siamo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chi siamo?</a>
       <a href="#eventi" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Eventi</a>
     </div>
-
   </nav>
 
   <!-- !PAGE CONTENT! -->
@@ -451,8 +450,8 @@
       <h1 class="w3-xxxlarge"><b>ARTEFATTI</b></h1>
     </div>
 
-    <p class="desc">Gli artefatti che il Museo conserva sono: <span>Computer - Riviste - Software - Libri - Periferiche</span></p>
-    <br>
+    <h4 class="art-desc">Gli artefatti che il Museo conserva sono: <span>Computer - Riviste - Software - Libri - Periferiche</span></h4>
+
     <!-- Photo grid (modal) -->
     <div class="w5-row-padding">
       <div>
@@ -484,7 +483,7 @@
       <p>Il Museo Piemontese dell’Informatica è dedicato alla storia dell’informatica.
         Il Museo Piemontese dell’Informatica è costituito da un insieme di collezioni, donate dai suoi soci fondatori, e da collezioni che sono state aggiunte successivamente.
         L’archivio del museo consta attualmente in oltre 6000 calcolatori, dai mainframe ai mini computer, dai personal agli home computer, dai coin-op alle console.</p>
-        <div class="image-section">
+      <div class="image-section">
         <img src="/resources/photo/content-mupin4.jpg" style="width:30%" alt="Logo">
         <img src="/resources/photo/content-mupin3.jpg" style="width:30%" alt="Logo">
         <img src="/resources/photo/content-mupin2.png" style="width:30%" alt="Logo">
